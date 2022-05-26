@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<base target="_blank" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>1.2.2.4. &#x041F;&#x0440;&#x043E;&#x0433;&#x0440;&#x0430;&#x043C;&#x043C;&#x043D;&#x043E;&#x0435; &#x0443;&#x0434;&#x0430;&#x043B;&#x0435;&#x043D;&#x0438;&#x0435; &#x0437;&#x0430;&#x043F;&#x0438;&#x0441;&#x0435;&#x0439; &#x0440;&#x0435;&#x0433;&#x0438;&#x0441;&#x0442;&#x0440;&#x0430; &#x0441;&#x0432;&#x0435;&#x0434;&#x0435;&#x043D;&#x0438;&#x0439;</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>1.2.2.4. Программное удаление записей регистра сведений</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_FC80C3867B"><strong>Программное удаление записей регистра сведений</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4CF6228547">14.03.2019</span><a href="https://tnsoft.ru/blog/category/administrirovanie/"><span class="de_F8F5F84640">Администрирование</span></a><a href="https://tnsoft.ru/blog/programmnoe-udalenie-zapisej-registra-svedenij/#comments"><span class="de_F8F5F84640">Комментарии: 1</span></a></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_725 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_725" />
+<tr style="height: 0px;">
+<td class="de_td_725" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_516 detbl" style="width: 488px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 488px;" class="de_col_1_516" />
+<tr style="height: 0px;">
+<td class="de_td_516" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 488px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_500 detbl" style="width: 488px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 488px;" class="de_col_1_500" />
+<tr style="height: 0px;">
+<td class="de_td_500" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 488px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_484 detbl" style="width: 468px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 468px;" class="de_col_1_484" />
+<tr style="height: 0px;">
+<td class="de_td_484" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 468px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_468 detbl" style="width: 468px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 468px;" class="de_col_1_468" />
+<tr style="height: 0px;">
+<td class="de_td_468" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 468px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Из этой записи Вы узнаете как программно удалить запись регистра сведений или выполнить полную очистку регистра сведений. Рассмотрим примеры работы с независимыми регистрами и регистрами, подчиненными регистратору.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Дополнительно рекомендуем Вам все изменения тестировать на </span><a href="https://tnsoft.ru/blog/sozdanie-rezervnoj-kopii-bazy-1s/" target="_blank"><span class="de_EB8E538437">копии Вашей информационной базы</span></a><span class="de_3B40B1BB7B">.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_B34A32F3C9"><strong>Если Вам нужно готовое решение по удалению записей регистра сведений</strong></span><span class="de_3B40B1BB7B"> — ознакомьтесь с нашей разработкой </span><a href="https://tnsoft.ru/razrabotki/udalenie-zapisej-registra-svedenij-ochistka-registra/" target="_blank"><span class="de_EB8E538437">«Обработка для удаления записей регистра сведений».</span></a><span class="de_EB8E538437"> </span><span class="de_3B40B1BB7B">Обработка позволит Вам решить все задачи по удалению записей в регистре сведений и значительно сэкономит Ваше время на подготовку аналогичного решения!</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_262 detbl" style="width: 236px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 236px;" class="de_col_1_262" />
+<tr style="height: 0px;">
+<td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 236px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_246 detbl" style="width: 236px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 236px;" class="de_col_1_246" />
+<tr style="height: 0px;">
+<td class="de_td_246" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f87c4; border-right-style: solid; border-right-width: 1px; border-right-color: #1f87c4; border-top-style: solid; border-top-width: 1px; border-top-color: #1f87c4; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f87c4;  width: 236px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_230 detbl" style="width: 214px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 214px;" class="de_col_1_230" />
+<tr style="height: 0px;">
+<td class="de_td_230" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 214px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_214 detbl" style="width: 214px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 214px;" class="de_col_1_214" />
+<tr style="height: 0px;">
+<td class="de_td_214" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 214px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<ul class="de_list"><li class="list-element list-counter-5" style="color:#222222;font-size:12pt; direction: ltr; counter-reset: list-counter-5;">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><div class="list-marker" style="color:#222222;font-size:12pt; display: inline-block; direction: ltr;"></div><a href="https://tnsoft.ru/blog/programmnoe-udalenie-zapisej-registra-svedenij/#1"><span class="de_3B40B1BB7B">Определяем вид изменяемого регистра сведений</span></a></div>
+</li><li class="list-element list-counter-5" style="color:#222222;font-size:12pt; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><div class="list-marker" style="color:#222222;font-size:12pt; display: inline-block; direction: ltr;"></div><a href="https://tnsoft.ru/blog/programmnoe-udalenie-zapisej-registra-svedenij/#2"><span class="de_3B40B1BB7B">Удаляем записи в независимом регистре сведений</span></a></div>
+</li><li class="list-element list-counter-5" style="color:#222222;font-size:12pt; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><div class="list-marker" style="color:#222222;font-size:12pt; display: inline-block; direction: ltr;"></div><a href="https://tnsoft.ru/blog/programmnoe-udalenie-zapisej-registra-svedenij/#3"><span class="de_3B40B1BB7B">Удаляем записи в регистре с подчинением регистратору</span></a></div>
+</li><li class="list-element list-counter-5" style="color:#222222;font-size:12pt; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><div class="list-marker" style="color:#222222;font-size:12pt; display: inline-block; direction: ltr;"></div><a href="https://tnsoft.ru/blog/programmnoe-udalenie-zapisej-registra-svedenij/#4"><span class="de_3B40B1BB7B">Полная очистка записей регистра сведений</span></a></div>
+</li></ul></td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_C13DFB60D0"><strong>Определяем вид изменяемого регистра сведений</strong></span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Регистры сведений в зависимости от режима записи подразделяются на независимые и с подчинением регистратору. Для того чтобы выяснить, к какому виду относится регистр, откройте его свойства:</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_1094 detbl" style="width: 1044px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 1044px;" class="de_col_1_1094" />
+<tr style="height: 0px;">
+<td class="de_td_1094" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 1044px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_1088 detbl" style="width: 1044px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 1044px;" class="de_col_1_1088" />
+<tr style="height: 0px;">
+<td class="de_td_1088" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 1044px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_1072 detbl" style="width: 1044px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 1044px;" class="de_col_1_1072" />
+<tr style="height: 0px;">
+<td class="de_td_1072" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 1044px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_1056 detbl" style="width: 1024px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 1024px;" class="de_col_1_1056" />
+<tr style="height: 0px;">
+<td class="de_td_1056" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 1024px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_1040 detbl" style="width: 1024px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 1024px;" class="de_col_1_1040" />
+<tr style="height: 0px;">
+<td class="de_td_1040" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 1024px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: center; direction: ltr; margin-left: 10px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="1024" height="837" class=" de_780D01ADE8" src="drex_programmnoe_udalenie_zapisej_registra_svedenij_custom.png"/></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">После того, как Вы выяснили вид регистра сведений — Вы можете выбрать вариант действий с регистром.</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_C13DFB60D0"><strong>Удаляем записи в независимом регистре сведений</strong></span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Для очистки записей с отбором Вам нужно проанализировать состав измерений регистра сведений. Задавая отбор по измерениям, Вы можете частично удалять данные в регистре сведений. К примеру, рассмотрим регистр сведений КурсыВалют. В этом регистре 2 измерения: Валюта и БазоваяВалюта:</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: center; direction: ltr; margin-left: 10px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="373" height="223" class=" de_780D01ADE8" src="drex_programmnoe_udalenie_zapisej_registra_svedenij_custom_2.png"/></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Теперь давайте рассмотрим 2 способа очистки записей по определенной Валюте. Первый способ — использование объекта НаборЗаписей:</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 20px; text-indent: 0px;"><table class="de_tbl_677 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_677" />
+<tr style="height: 0px;">
+<td class="de_td_677" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #dddddd; border-right-style: solid; border-right-width: 1px; border-right-color: #dddddd; border-top-style: solid; border-top-width: 1px; border-top-color: #dddddd; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #dddddd;  width: 100%; vertical-align: top; background-color: #f5f5f5;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 20px; text-indent: 0px;"><span class="de_805436532F">Процедура</span><span class="de_6F3970B718"> ОчиститьЗаписиВНезависимомРегистреСведенийСОтбором</span><span class="de_805436532F">(</span><span class="de_6F3970B718">Валюта</span><span class="de_805436532F">,</span><span class="de_6F3970B718"> БазоваяВалюта</span><span class="de_805436532F">)</span><span class="de_6F3970B718">	Набор </span><span class="de_805436532F">=</span><span class="de_6F3970B718"> РегистрыСведений</span><span class="de_805436532F">.</span><span class="de_6F3970B718">КурсыВалют</span><span class="de_805436532F">.</span><span class="de_6F3970B718">СоздатьНаборЗаписей</span><span class="de_805436532F">();</span><span class="de_6F3970B718">	Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Отбор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Валюта</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Установить</span><span class="de_805436532F">(</span><span class="de_6F3970B718">Валюта</span><span class="de_805436532F">);</span><span class="de_6F3970B718">	Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Отбор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">БазоваяВалюта</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Установить</span><span class="de_805436532F">(</span><span class="de_6F3970B718">Валюта</span><span class="de_805436532F">);</span><span class="de_6F3970B718">	Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Записать</span><span class="de_805436532F">();КонецПроцедуры</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">В этом примере мы создаем набор записей, устанавливаем для него отбор по измерениям, но записи в набор не добавляем. В результате при записи набора будет выполнена очистка записей по валютам, установленным в качестве отбора.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Второй способ — использование объекта МенеджерЗаписи:</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 20px; text-indent: 0px;"><table class="de_tbl_677 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_677" />
+<tr style="height: 0px;">
+<td class="de_td_677" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #dddddd; border-right-style: solid; border-right-width: 1px; border-right-color: #dddddd; border-top-style: solid; border-top-width: 1px; border-top-color: #dddddd; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #dddddd;  width: 100%; vertical-align: top; background-color: #f5f5f5;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 20px; text-indent: 0px;"><span class="de_805436532F">Процедура</span><span class="de_6F3970B718"> ОчиститьЗаписиВНезависимомРегистреСведенийСОтбором</span><span class="de_805436532F">(</span><span class="de_6F3970B718">Валюта</span><span class="de_805436532F">,</span><span class="de_6F3970B718"> БазоваяВалюта</span><span class="de_805436532F">)</span><span class="de_6F3970B718">	Запись </span><span class="de_805436532F">=</span><span class="de_6F3970B718"> РегистрыСведений</span><span class="de_805436532F">.</span><span class="de_6F3970B718">КурсыВалют</span><span class="de_805436532F">.</span><span class="de_6F3970B718">СоздатьМенеджерЗаписи</span><span class="de_805436532F">();</span><span class="de_6F3970B718">	Запись</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Валюта </span><span class="de_805436532F">=</span><span class="de_6F3970B718"> Валюта</span><span class="de_805436532F">;</span><span class="de_6F3970B718">	Запись</span><span class="de_805436532F">.</span><span class="de_6F3970B718">БазоваяВалюта </span><span class="de_805436532F">=</span><span class="de_6F3970B718"> БазоваяВалюта</span><span class="de_805436532F">;</span><span class="de_6F3970B718">	Запись</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Удалить</span><span class="de_805436532F">();КонецПроцедуры</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Оба вариант удалят записи по валюте. При использовании второго варианта платформа будет конвертировать менеджер записи в набор записей. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Не забывайте про порядок измерений в регистре. К примеру, если задавать отбор только по измерению Валюта — будут удаляться все записи по этой валюте независимо от значений второго измерения (БазоваяВалюта). Таким образом Вы можете либо более детально удалять записи, устанавливая отбор по нескольким измерениям, либо делать более общее удаление с использованием отбора только по одному измерению.</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_C13DFB60D0"><strong>Удаляем записи в регистре с подчинением регистратору</strong></span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Все записи в таком регистре подчинены регистратору. Поэтому для удаления записей Вам нужно задавать отбор по регистратору. В качестве примера будем использовать регистр ЦеныНоменклатуры. Все записи этого регистра подчинены документам-регистраторам. Состав измерений регистра:</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: center; direction: ltr; margin-left: 10px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="376" height="262" class=" de_780D01ADE8" src="drex_programmnoe_udalenie_zapisej_registra_svedenij_custom_3.png"/></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Теперь рассмотрим, как можно удалить все записи по определенному регистратору:</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 20px; text-indent: 0px;"><table class="de_tbl_677 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_677" />
+<tr style="height: 0px;">
+<td class="de_td_677" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #dddddd; border-right-style: solid; border-right-width: 1px; border-right-color: #dddddd; border-top-style: solid; border-top-width: 1px; border-top-color: #dddddd; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #dddddd;  width: 100%; vertical-align: top; background-color: #f5f5f5;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 20px; text-indent: 0px;"><span class="de_805436532F">Процедура</span><span class="de_6F3970B718"> ОчиститьЗаписиВЗависимомРегистреСведений</span><span class="de_805436532F">(</span><span class="de_6F3970B718">Регистратор</span><span class="de_805436532F">)</span><span class="de_6F3970B718">	Набор </span><span class="de_805436532F">=</span><span class="de_6F3970B718"> РегистрыСведений</span><span class="de_805436532F">.</span><span class="de_6F3970B718">ЦеныНоменклатуры</span><span class="de_805436532F">.</span><span class="de_6F3970B718">СоздатьНаборЗаписей</span><span class="de_805436532F">();</span><span class="de_6F3970B718">	Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Отбор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Регистратор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Установить</span><span class="de_805436532F">(</span><span class="de_6F3970B718">Регистратор</span><span class="de_805436532F">);</span><span class="de_6F3970B718">	Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Записать</span><span class="de_805436532F">();КонецПроцедуры</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Приведенный выше пример очистит все записи по регистратору. Теперь давайте рассмотрим пример удаления записей с отбором — к примеру нам необходимо удалить записи по определенной номенклатуре:</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 20px; text-indent: 0px;"><table class="de_tbl_677 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_677" />
+<tr style="height: 0px;">
+<td class="de_td_677" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #dddddd; border-right-style: solid; border-right-width: 1px; border-right-color: #dddddd; border-top-style: solid; border-top-width: 1px; border-top-color: #dddddd; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #dddddd;  width: 100%; vertical-align: top; background-color: #f5f5f5;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 20px; text-indent: 0px;"><span class="de_805436532F">Процедура</span><span class="de_6F3970B718"> ОчиститьЗаписиВЗависимомРегистреСведений</span><span class="de_805436532F">(</span><span class="de_6F3970B718">Регистратор</span><span class="de_805436532F">,</span><span class="de_6F3970B718"> Номенклатура</span><span class="de_805436532F">)</span><span class="de_6F3970B718">	Набор </span><span class="de_805436532F">=</span><span class="de_6F3970B718"> РегистрыСведений</span><span class="de_805436532F">.</span><span class="de_6F3970B718">ЦеныНоменклатуры</span><span class="de_805436532F">.</span><span class="de_6F3970B718">СоздатьНаборЗаписей</span><span class="de_805436532F">();</span><span class="de_6F3970B718">	Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Отбор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Регистратор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Установить</span><span class="de_805436532F">(</span><span class="de_6F3970B718">Регистратор</span><span class="de_805436532F">);</span><span class="de_6F3970B718">	Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Прочитать</span><span class="de_805436532F">();</span><span class="de_6F3970B718">	</span><span class="de_805436532F">Для</span><span class="de_6F3970B718"> Индекс </span><span class="de_805436532F">=</span><span class="de_6F3970B718"> </span><span class="de_6F8B69F511">1</span><span class="de_6F3970B718"> </span><span class="de_805436532F">-</span><span class="de_6F3970B718"> Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Количество</span><span class="de_805436532F">()</span><span class="de_6F3970B718"> </span><span class="de_805436532F">По</span><span class="de_6F3970B718"> </span><span class="de_6F8B69F511">0</span><span class="de_6F3970B718"> </span><span class="de_805436532F">Цикл</span><span class="de_6F3970B718">		Запись </span><span class="de_805436532F">=</span><span class="de_6F3970B718"> Набор</span><span class="de_805436532F">[-</span><span class="de_6F3970B718"> Индекс</span><span class="de_805436532F">];</span><span class="de_6F3970B718">		</span><span class="de_805436532F">Если</span><span class="de_6F3970B718"> Запись</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Номенклатура </span><span class="de_805436532F">=</span><span class="de_6F3970B718"> Номенклатура </span><span class="de_805436532F">Тогда</span><span class="de_6F3970B718">			Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Удалить</span><span class="de_805436532F">(-</span><span class="de_6F3970B718"> Индекс</span><span class="de_805436532F">);</span><span class="de_6F3970B718">		</span><span class="de_805436532F">КонецЕсли;</span><span class="de_6F3970B718">	</span><span class="de_805436532F">КонецЦикла;</span><span class="de_6F3970B718">	Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Записать</span><span class="de_805436532F">();КонецПроцедуры</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Первым действием мы устанавливаем отбор по регистратору и считываем записи. Далее в <strong>обратном</strong> порядке обходим записи и удаляем только нужные записи. Таким образом можно выполнять «точечную» очистку регистра.</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_C13DFB60D0"><strong>Полная очистка записей регистра сведений</strong></span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><span class="de_3B40B1BB7B">Ниже приведен пример, который полностью очистит записи в регистре сведений:</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_759 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_759" />
+<tr style="height: 0px;">
+<td class="de_td_759" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_753 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_753" />
+<tr style="height: 0px;">
+<td class="de_td_753" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_737 detbl" style="width: 725px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 725px;" class="de_col_1_737" />
+<tr style="height: 0px;">
+<td class="de_td_737" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 725px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_721 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_721" />
+<tr style="height: 0px;">
+<td class="de_td_721" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 10px; text-indent: 0px;"><table class="de_tbl_705 detbl" style="width: 705px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 705px;" class="de_col_1_705" />
+<tr style="height: 0px;">
+<td class="de_td_705" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #222222; border-right-style: none; border-right-width: 0px; border-right-color: #222222; border-top-style: none; border-top-width: 0px; border-top-color: #222222; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #222222;  width: 705px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 20px; text-indent: 0px;"><table class="de_tbl_677 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_677" />
+<tr style="height: 0px;">
+<td class="de_td_677" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #dddddd; border-right-style: solid; border-right-width: 1px; border-right-color: #dddddd; border-top-style: solid; border-top-width: 1px; border-top-color: #dddddd; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #dddddd;  width: 100%; vertical-align: top; background-color: #f5f5f5;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 20px; text-indent: 0px;"><span class="de_805436532F">Процедура</span><span class="de_6F3970B718"> ОчиститьЗаписиРегистраСведений</span><span class="de_805436532F">()</span><span class="de_6F3970B718">	Набор </span><span class="de_805436532F">=</span><span class="de_6F3970B718"> РегистрыСведений</span><span class="de_805436532F">.</span><span class="de_6F3970B718">КурсыВалют</span><span class="de_805436532F">.</span><span class="de_6F3970B718">СоздатьНаборЗаписей</span><span class="de_805436532F">();</span><span class="de_6F3970B718">	Набор</span><span class="de_805436532F">.</span><span class="de_6F3970B718">Записать</span><span class="de_805436532F">();КонецПроцедуры</span></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</td></tr></table></div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

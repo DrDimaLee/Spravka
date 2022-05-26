@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<base target="_blank" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>1.2.4.6. &#x041E;&#x0431;&#x0440;&#x0430;&#x0431;&#x043E;&#x0442;&#x0447;&#x0438;&#x043A;&#x0438; &#x0441;&#x043E;&#x0431;&#x044B;&#x0442;&#x0438;&#x0439; &#x041E;&#x0431;&#x0440;&#x0430;&#x0431;&#x043E;&#x0442;&#x043A;&#x0430;&#x041F;&#x043E;&#x043B;&#x0443;&#x0447;&#x0435;&#x043D;&#x0438;&#x044F;&#x041F;&#x0440;&#x0435;&#x0434;&#x0441;&#x0442;&#x0430;&#x0432;&#x043B;&#x0435;&#x043D;&#x0438;&#x044F; &#x0438; &#x041E;&#x0431;&#x0440;&#x0430;&#x0431;&#x043E;&#x0442;&#x043A;&#x0430;&#x041F;&#x043E;&#x043B;&#x0443;&#x0447;&#x0435;&#x043D;&#x0438;&#x044F;&#x041F;&#x043E;&#x043B;&#x0435;&#x0439;&#x041F;&#x0440;&#x0435;&#x0434;&#x0441;&#x0442;&#x0430;&#x0432;&#x043B;&#x0435;&#x043D;&#x0438;&#x044F;&#x000D;&#x000A; </title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>1.2.4.6. Обработчики событий ОбработкаПолученияПредставления и ОбработкаПолученияПолейПредставления</strong></h1></div>
+<div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><h1><strong>&#160;</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; float: right;">
+<col style="width: 100%;" class="de_col_1_576" />
+<tr style="height: 0px;">
+<td class="de_td_576" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 3px; border-left-color: #000000; border-right-style: none; border-right-width: 3px; border-right-color: #000000; border-top-style: none; border-top-width: 3px; border-top-color: #000000; border-bottom-style: none; border-bottom-width: 3px; border-bottom-color: #000000;  width: 100%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C3917CD988">#std746</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 40px; text-indent: 0px;"><span class="de_C3917CD988">Область применения: управляемое приложение, мобильное приложение.</span><a class="anchor" id="1"></a></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C3917CD988">1. С помощью данных обработчиков модуля менеджера объекта можно переопределить представление объекта информационной базы, которое выводится в полях форм и в списках.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C3917CD988">Пример реализации:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7">Процедура ОбработкаПолученияПолейПредставления(Поля, СтандартнаяОбработка)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7"> Поля.Добавить(&quot;Наименование&quot;);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7"> Поля.Добавить(&quot;Дата&quot;);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7"> СтандартнаяОбработка = Ложь;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7">КонецПроцедуры</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7">Процедура ОбработкаПолученияПредставления(Данные, Представление, СтандартнаяОбработка)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7"> Наименование = ?(ПустаяСтрока(Данные.Наименование), НСтр(&quot;ru = 'Без описания'&quot;), Данные.Наименование);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7"> Дата = Формат(Данные.Дата, ?(ПолучитьФункциональнуюОпцию(&quot;ИспользоватьДатуИВремяВСрокахЗадач&quot;), &quot;ДЛФ=DT&quot;, &quot;ДЛФ=D&quot;));</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7"> Представление = СтроковыеФункцииКлиентСервер.ПодставитьПараметрыВСтроку(НСтр(&quot;ru = '%1 от %2'&quot;), Наименование, Дата);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7"> СтандартнаяОбработка = Ложь;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7">КонецПроцедуры</span><a class="anchor" id="2"></a></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C3917CD988">2. Обработчики вызываются при любой необходимости получения представления какого-либо объекта информационной базы. Поэтому избыточные данные или неправильный выбор данных для формирования представления могут привести к существенному замедлению работы системы.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C3917CD988">Также не следует выполнять в этих обработчиках запросы или получение объектов информационной базы (в том числе, запрещены обращения к реквизитам объектов ссылочных типов через точку, что приводит к чтению всего объекта целиком из базы данных). Также нежелательно использовать получение представления и реквизитов ссылок.</span><a class="anchor" id="3"></a></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C3917CD988">3. Обработчики могут быть также вызваны, в том числе, при записи и удалении объекта в режиме обмена данными. Представление объекта при этом запрашивается для формирования записи в журнал регистрации. Поэтому к ним предъявляются те же требования, что и к логике регистрации объектов  - см. п. 1.2 </span><a href="https://its.1c.ru/db/content/v8std/src/700/i8100701.htm"><span class="de_ED8024E2DA">Разработка планов обмена с отборами</span></a><span class="de_C3917CD988">.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C3917CD988">Эти требования также справедливы при разработке планов обмена для синхронизации с другими программами (не РИБ, по правилам конвертации) с помощью подсистемы «Обмен данными» Библиотеки стандартных подсистем.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C3917CD988">Например, недопустимо </span><a href="https://its.1c.ru/db/v8std/content/697/hdoc"><span class="de_ED8024E2DA">обращаться к предопределенным элементам</span></a><span class="de_C3917CD988">, которые еще могли быть не загружены в базу или, наоборот, уже удалены в ходе обмена данными:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7">Процедура ОбработкаПолученияПредставления(Данные, Представление, СтандартнаяОбработка)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7">    СтандартнаяОбработка = Ложь;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7">    Если Данные.ВидОбразования = Справочники.ВидыОбразованияФизическихЛиц.ПослевузовскоеОбразование Тогда</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7">        Представление = НСтр(&quot;ru = 'Послевузовское образование'&quot;);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7">    Иначе</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_5514C338C7">      ...</span><a class="anchor" id="4"></a></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C3917CD988">4. При реализации обработчиков следует также учитывать требования о поддержке </span><a href="https://its.1c.ru/db/v8std/content/680/hdoc"><span class="de_ED8024E2DA">толстого клиента, управляемое приложение, клиент-сервер</span></a><span class="de_C3917CD988">.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>См. также</strong></span></div>
+<ul class="de_list"><li class="list-element list-counter-6" style="color:#0066cc;font-size:9pt;font-family:&quot;Verdana&quot;; direction: ltr; counter-reset: list-counter-6;">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 40px; text-indent: 0px;"><div class="list-marker" style="color:#0066cc;font-size:9pt;font-family:&quot;Verdana&quot;; display: inline-block; direction: ltr;"></div><a href="https://its.1c.ru/db/content/v8std/src/300/300/i8100449.htm"><span class="de_ED8024E2DA">Получение представлений для ссылочных значений в табличном документе</span></a></div>
+</li><li class="list-element list-counter-6" style="color:#0066cc;font-size:9pt;font-family:&quot;Verdana&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 40px; text-indent: 0px;"><div class="list-marker" style="color:#0066cc;font-size:9pt;font-family:&quot;Verdana&quot;; display: inline-block; direction: ltr;"></div><a href="https://its.1c.ru/db/content/v8std/src/1%C2%A0100/i8100468.htm"><span class="de_ED8024E2DA">Пользовательские представления объектов</span></a></div>
+</li></ul></div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

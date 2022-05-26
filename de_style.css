@@ -1,0 +1,739 @@
+.detbl
+{
+direction:ltr; border-spacing:0px;
+border-collapse: collapse;
+border: 0px none black;
+}
+.de_list
+{
+margin: 0;padding: 0;
+}
+div.p
+{
+margin-top:0px;
+margin-bottom:0px;
+font-weight:normal;
+}
+
+div.description_on_page div.p,
+ div.description_on_page div.p a,
+ .m-pageContent__side__header div.p,
+ .m-pageContent__side__header div.p a,
+ .m-pageContent__side__footer div.p,
+ .m-pageContent__side__footer div.p a,
+ .m-pageContent__side__right div.p,
+ .m-pageContent__side__right div.p a,
+ .m-pageContent__side__left div.p,
+ .m-pageContent__side__left div.p a
+{
+font-family:"Arial";
+font-size: 11pt;color:#000000;
+font-style:normal;
+text-decoration:none;
+font-weight:normal;
+}
+h1
+{
+font-family:"Arial";
+font-size: 13pt;color:#000000;
+font-style:normal;
+text-decoration:none;
+font-weight:normal;
+display:inline;
+margin:0;
+padding:0;
+}
+h2
+{
+font-family:"Arial";
+font-size: 11pt;color:#000000;
+font-style:normal;
+text-decoration:none;
+font-weight:normal;
+display:inline;
+margin:0;
+padding:0;
+}
+span.code
+{
+font-family:"Courier New";
+font-size: 11pt;color:#000000;
+font-style:normal;
+text-decoration:none;
+font-weight:normal;
+}
+span.quote
+{
+font-family:"Georgia";
+font-size: 11pt;color:#000000;
+font-style:italic;
+text-decoration:none;
+font-weight:normal;
+}
+img.de_780D01ADE8
+{
+margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;}
+span.de_00473115D7
+{
+	font-family: "courier new";
+	font-size: 10pt;
+	color:#ff0000;
+}
+span.de_065E135154
+{
+	font-family: "Courier New";
+	font-size: 12pt;
+	color:#0000ff;
+}
+span.de_134D85FD9B
+{
+	font-family: "Arial";
+	font-size: 10pt;
+	color:#4d4d4d;
+}
+span.de_1381ACE11F
+{
+	font-family: "Courier New";
+	font-size: 10pt;
+	color:#008000;
+}
+span.de_17C63F5AFE
+{
+	font-family: "Monaco";
+	font-size: 9pt;
+	color:#ff0000;
+}
+span.de_1837EB6C7F
+{
+	font-family: "courier new";
+	font-size: 10pt;
+	color:#000000;
+}
+span.de_21C8817133
+{
+	font-family: "inherit";
+	font-size: 10pt;
+	color:#222222;
+}
+span.de_25D055FDD4
+{
+	font-family: "Courier";
+	font-size: 9pt;
+	color:#000000;
+}
+span.de_2AEEDCC877
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#333333;
+}
+span.de_2EDDBDB373
+{
+	color:#116c2b;
+}
+span.de_2F96214069
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#116c2b;
+}
+span.de_37F539F48F
+{
+	font-family: "Monaco";
+	font-size: 9pt;
+	color:#0000ff;
+}
+span.de_39A581CFF1
+{
+	font-family: "Verdana";
+	font-size: 9pt;
+	color:#293851;
+}
+span.de_3B40B1BB7B
+{
+	font-size: 12pt;
+	color:#222222;
+}
+span.de_3DED6C92E7
+{
+	font-family: "inherit";
+	font-size: 12pt;
+	color:#5c2699;
+}
+span.de_40A1E0D682
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#666666;
+	font-style:italic;
+}
+span.de_42CB517B6F
+{
+	font-family: "Calibri";
+	font-size: 11pt;
+	color:#767676;
+}
+span.de_45105D3361
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#000000;
+	text-decoration:underline;
+}
+span.de_45E825280E
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#ff0000;
+}
+span.de_4AF4BF9DD6
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#000000;
+}
+span.de_4AF5CCE644
+{
+	font-family: "Helvetica Neue";
+	font-size: 10pt;
+	color:#0000ff;
+}
+span.de_4BDB8D749F
+{
+	font-family: "Courier";
+	font-size: 10pt;
+	color:#ff0000;
+}
+span.de_4CF6228547
+{
+	font-family: "Times New Roman";
+	font-size: 9pt;
+	color:#000000;
+}
+span.de_53BF3D4EDC
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#303030;
+}
+span.de_5514C338C7
+{
+	font-family: "Courier New";
+	font-size: 10pt;
+	color:#000080;
+}
+span.de_56E0F4D4A6
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#293851;
+}
+span.de_56F4564E24
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#000000;
+}
+span.de_5A562E478A
+{
+	font-family: "Calibri";
+	font-size: 11pt;
+	color:#62840f;
+}
+span.de_5FB625965B
+{
+	font-family: "Arial";
+	font-size: 9pt;
+	color:#000000;
+}
+span.de_5FBF8EB62F
+{
+	font-family: "Times New Roman";
+	font-size: 9pt;
+	color:#666666;
+}
+span.de_616C63CE50
+{
+	font-family: "Arial";
+	font-size: 18pt;
+	color:#003366;
+}
+span.de_6F3970B718
+{
+	font-family: "Open Sans";
+	font-size: 9pt;
+	color:#0000ff;
+}
+span.de_6F8B69F511
+{
+	font-family: "Open Sans";
+	font-size: 9pt;
+	color:#000000;
+}
+span.de_7002600295
+{
+	font-family: "courier new";
+	font-size: 13pt;
+	color:#dd1144;
+}
+span.de_744DE1A2A3
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#001a34;
+}
+span.de_7ECBECEBE5
+{
+	font-family: "Times New Roman";
+	font-size: 12pt;
+	color:#000000;
+}
+span.de_805436532F
+{
+	font-family: "Open Sans";
+	font-size: 9pt;
+	color:#ff0000;
+}
+span.de_8112703D22
+{
+	font-family: "Verdana";
+	font-size: 7pt;
+	color:#008000;
+}
+span.de_818A0A2A42
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#006600;
+}
+span.de_81F8A727BD
+{
+	font-family: "inherit";
+	font-size: 12pt;
+	color:#0000ff;
+}
+span.de_83BE3C4E7A
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#0066cc;
+	text-decoration:underline;
+}
+span.de_8441C0A894
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#ff003c;
+}
+span.de_854B34B87E
+{
+	font-family: "Courier";
+	font-size: 9pt;
+	color:#0000ff;
+}
+span.de_87CC7C654C
+{
+	font-family: "Verdana";
+	font-size: 10pt;
+	color:#c50808;
+}
+span.de_8A030B40E6
+{
+	font-family: "Courier New";
+	font-size: 10pt;
+	color:#0000ff;
+}
+span.de_8C403700ED
+{
+	font-family: "Arial";
+	font-size: 11pt;
+}
+span.de_8FA7093FD4
+{
+	font-family: "Times New Roman";
+	font-size: 9pt;
+	color:#1c55ae;
+	text-decoration:underline;
+}
+span.de_937E0348B4
+{
+	font-family: "Courier New";
+	font-size: 10pt;
+	color:#000000;
+}
+span.de_95D0EA1C74
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#00b050;
+}
+span.de_96D3860DA6
+{
+	font-family: "Consolas";
+	font-size: 10pt;
+	color:#333333;
+}
+span.de_96F0909776
+{
+	font-family: "Courier New";
+	font-size: 8pt;
+	color:#cc0000;
+}
+span.de_9B6035DDD7
+{
+	font-family: "Times New Roman";
+	font-size: 12pt;
+	color:#0066cc;
+	text-decoration:underline;
+}
+span.de_9DECEB4AF0
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#1f5298;
+	text-decoration:underline;
+}
+span.de_A6255A6E85
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#ff3600;
+}
+span.de_A760D29DDB
+{
+	font-family: "Helvetica Neue";
+	font-size: 10pt;
+	color:#333333;
+}
+span.de_A90948909E
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#178e38;
+}
+span.de_ABF6DB3FD9
+{
+	font-family: "Courier";
+	font-size: 9pt;
+	color:#ff0000;
+}
+span.de_AE43A86E79
+{
+	font-family: "Arial";
+	font-size: 10pt;
+	color:#ff0000;
+}
+span.de_B0B5DD9A7A
+{
+	font-family: "Arial";
+	font-size: 10pt;
+	color:#0000ff;
+}
+span.de_B22A2C8F71
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#0000ff;
+}
+span.de_B34A32F3C9
+{
+	font-size: 12pt;
+	color:#008000;
+}
+span.de_B96314B9DE
+{
+	font-family: "Monaco";
+	font-size: 9pt;
+	color:#000000;
+}
+span.de_B9FD4169DE
+{
+	font-family: "Courier";
+	font-size: 9pt;
+	color:#ff3600;
+}
+span.de_BC0CD0CB45
+{
+	font-family: "Calibri";
+	font-size: 9pt;
+	color:#000000;
+}
+span.de_C13DFB60D0
+{
+	font-size: 13pt;
+	color:#1f87c4;
+}
+span.de_C3917CD988
+{
+	font-family: "Verdana";
+	font-size: 9pt;
+	color:#000000;
+}
+span.de_C47D959D2B
+{
+	font-family: "Times New Roman";
+	font-size: 12pt;
+	color:#000000;
+	text-decoration:underline;
+}
+span.de_C5A91726DE
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#008000;
+}
+span.de_C78DA2DFDE
+{
+	font-family: "Courier";
+	font-size: 9pt;
+	color:#008000;
+}
+span.de_CC7DAF531E
+{
+	font-family: "Arial";
+	font-size: 10pt;
+	color:#000000;
+}
+span.de_CD176700C6
+{
+	font-family: "courier new";
+	font-size: 10pt;
+	color:#0000ff;
+}
+span.de_CE837357D7
+{
+	font-family: "Courier";
+	font-size: 9pt;
+	color:#ff003c;
+}
+span.de_D68646C8A7
+{
+	font-family: "Courier New";
+	font-size: 12pt;
+	color:#000000;
+}
+span.de_E0D79DE1AC
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#000000;
+	font-style:italic;
+}
+span.de_E1DD958ADB
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#0012ff;
+}
+span.de_E52550AB33
+{
+	font-family: "Helvetica Neue";
+	font-size: 10pt;
+	color:#000000;
+}
+span.de_E71183D815
+{
+	font-family: "Times New Roman";
+	font-size: 13pt;
+	color:#000000;
+}
+span.de_E770277F0A
+{
+	font-family: "Helvetica Neue";
+	font-size: 10pt;
+	color:#ff0000;
+}
+span.de_EA4BCA6BA1
+{
+	font-family: "Courier New";
+	font-size: 12pt;
+	color:#ff0000;
+}
+span.de_EAEC673B3E
+{
+	font-family: "Courier New";
+	font-size: 10pt;
+	color:#ff0000;
+}
+span.de_EB55AC91DD
+{
+	color:#008000;
+}
+span.de_EB8B7D24BA
+{
+	font-family: "Helvetica Neue";
+	font-size: 10pt;
+	color:#008000;
+}
+span.de_EB8E538437
+{
+	font-size: 12pt;
+	color:#3366ff;
+}
+span.de_ED8024E2DA
+{
+	font-family: "Verdana";
+	font-size: 9pt;
+	color:#0066cc;
+	text-decoration:underline;
+}
+span.de_F2A5DDF7C0
+{
+	font-family: "Arial";
+	font-size: 10pt;
+	color:#1c55ae;
+	text-decoration:underline;
+}
+span.de_F5F52ABCD8
+{
+	font-family: "inherit";
+	font-size: 12pt;
+	color:#aa0d91;
+}
+span.de_F86928F523
+{
+	font-family: "Courier New";
+	font-size: 12pt;
+	color:#008000;
+}
+span.de_F8F5F84640
+{
+	font-family: "Times New Roman";
+	font-size: 9pt;
+	color:#999999;
+}
+span.de_FC80C3867B
+{
+	font-family: "PT Serif";
+	font-size: 27pt;
+	color:#222222;
+}
+.list-element {
+	list-style-type: none;
+}
+.list-counter-0 > div > * {
+	text-indent: 0px;}
+.list-counter-0 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-0, disc) '\00a0';
+	counter-increment: list-counter-0;
+}
+.list-counter-0 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-1 > div > * {
+	text-indent: 0px;}
+.list-counter-1 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-1, disc) '\00a0';
+	counter-increment: list-counter-1;
+}
+.list-counter-1 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-2 > div > * {
+	text-indent: 0px;}
+.list-counter-2 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-2, disc) '\00a0';
+	counter-increment: list-counter-2;
+}
+.list-counter-2 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-3 > div > * {
+	text-indent: 0px;}
+.list-counter-3 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-3, disc) '\00a0';
+	counter-increment: list-counter-3;
+}
+.list-counter-3 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-4 > div > * {
+	text-indent: 0px;}
+.list-counter-4 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-4, disc) '\00a0';
+	counter-increment: list-counter-4;
+}
+.list-counter-4 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-5 > div > * {
+	text-indent: 0px;}
+.list-counter-5 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-5, disc) '\00a0';
+	counter-increment: list-counter-5;
+}
+.list-counter-5 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-6 > div > * {
+	text-indent: 0px;}
+.list-counter-6 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-6, disc) '\00a0';
+	counter-increment: list-counter-6;
+}
+.list-counter-6 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}

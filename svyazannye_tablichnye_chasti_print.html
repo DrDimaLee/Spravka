@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<base target="_blank" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>1.2.5.5. &#x0421;&#x0432;&#x044F;&#x0437;&#x0430;&#x043D;&#x043D;&#x044B;&#x0435; &#x0442;&#x0430;&#x0431;&#x043B;&#x0438;&#x0447;&#x043D;&#x044B;&#x0435; &#x0447;&#x0430;&#x0441;&#x0442;&#x0438;</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>1.2.5.5. Связанные табличные части</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="1216" height="258" class=" de_780D01ADE8" src="drex_svyazannye_tablichnye_chasti_custom.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="292" height="312" class=" de_780D01ADE8" src="drex_svyazannye_tablichnye_chasti_custom_2.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">---------------------------</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_EB55AC91DD">При добавлении строки Сотрудники заполняем поле УникальныйИдентификатор</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&amp;НаКлиенте</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Процедура СотрудникиОбработкаВыбора(Элемент, ВыбранноеЗначение, СтандартнаяОбработка)</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; Если ВыбранноеЗначение &lt;&gt; Неопределено Тогда</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; ИнформацияПоСотрудникам = ПредставитьВВидеСтруктуры(ВыбранноеЗначение.АдресСтудентовВХранилище);</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; Если ИнформацияПоСотрудникам = Неопределено Тогда</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; Сообщить(&quot;Для подбора используйте только вкладку ''Сотрудники''&quot;);</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; Возврат;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; КонецЕсли;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; Если ИнформацияПоСотрудникам.Количество() &gt; 0 Тогда</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; Для Каждого ТекСтруктура Из ИнформацияПоСотрудникам Цикл</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; НоваяСтрокаСотрудника = Объект.Сотрудники.Добавить();</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; НоваяСтрокаСотрудника.Сотрудник = ТекСтруктура.Сотрудник;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; НоваяСтрокаСотрудника.Должность = ТекСтруктура.Должность;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; НоваяСтрокаСотрудника.Подразделение = ТекСтруктура.Кафедра;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; НоваяСтрокаСотрудника.УникальныйИдентификатор = Новый УникальныйИдентификатор();</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; КонецЦикла;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; КонецЕсли;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; //ОбновитьКоличествоВСтатистике();</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; Модифицированность = Истина;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; КонецЕсли;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">КонецПроцедуры</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_EB55AC91DD">При добавлении строки Показатели заполняем поле УникальныйИдентификатор текущим значением аналогичного поля Сотрудники</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&amp;НаКлиенте</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Процедура ПоказателиПриНачалеРедактирования(Элемент, НоваяСтрока, Копирование)</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; Если НоваяСтрока Тогда</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; Элемент.ТекущиеДанные.УникальныйИдентификатор = Элементы.Сотрудники.ТекущиеДанные.УникальныйИдентификатор;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; КонецЕсли; &#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">КонецПроцедуры</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">---------------------------------------</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_EB55AC91DD">При удалении строки Сотрудники удаляем все строки в Показатели</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&amp;НаКлиенте</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Процедура СотрудникиПередУдалением(Элемент, Отказ)</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; ПараметрыОтбора = Новый Структура(&quot;УникальныйИдентификатор&quot;, Элемент.ТекущиеДанные.УникальныйИдентификатор);</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; НайденныеСтрокиПоказатели = Объект.Показатели.НайтиСтроки(ПараметрыОтбора);</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; Для каждого ТекСтрока Из НайденныеСтрокиПоказатели Цикл</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; Объект.Показатели.Удалить(ТекСтрока);</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; КонецЦикла;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">КонецПроцедуры</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">---------------------------------------</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_EB55AC91DD">При выборе строки Сотрудники в Показатели делаем отбор по УникальныйИдентификатор, а также рассчитываем сумму по строкам, которые вошли в отбор.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&amp;НаКлиенте</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Процедура СотрудникиПриАктивизацииСтроки(Элемент)</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; УстановитьОтборСтрокПоказатели();</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; ИтогПоСуммеБаллов = 0;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; Для Каждого ТекСтрока Из Объект.Показатели Цикл</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; Если Элементы.Показатели.ПроверитьСтроку(ТекСтрока.ПолучитьИдентификатор()) Тогда</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; ИтогПоСуммеБаллов = ИтогПоСуммеБаллов + ТекСтрока.СуммаБаллов; &#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; КонецЕсли; &#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; КонецЦикла; &#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">КонецПроцедуры</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&amp;НаКлиенте</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Процедура УстановитьОтборСтрокПоказатели()</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; Если Элементы.Сотрудники.ТекущиеДанные &lt;&gt; Неопределено Тогда</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; Элементы.Показатели.ОтборСтрок = Новый ФиксированнаяСтруктура(&quot;УникальныйИдентификатор&quot;, Элементы.Сотрудники.ТекущиеДанные.УникальныйИдентификатор);</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; КонецЕсли; &#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">КонецПроцедуры</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">----------------------------------------</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_EB55AC91DD">При изменении Показатели пересчитываем поля текущей строки</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&amp;НаКлиенте</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Процедура ПоказателиПриИзменении(Элемент)</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; Если Элемент.ТекущиеДанные &lt;&gt; Неопределено Тогда</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; ИдентификаторТекСтроки = Элемент.ТекущиеДанные.ПолучитьИдентификатор();</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; ПоказателиПриИзмененииНаСервере(ИдентификаторТекСтроки);</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; КонецЕсли;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; //УстановитьОтборСтрокПоказатели();</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">КонецПроцедуры</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Процедура ПоказателиПриИзмененииНаСервере(ИдентификаторТекСтроки)</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; ЗаполнитьРеквизитыВСтрокеПоПоказателю(Объект.Показатели.НайтиПоИдентификатору(ИдентификаторТекСтроки));</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">КонецПроцедуры</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&amp;НаСервере</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Процедура ЗаполнитьРеквизитыВСтрокеПоПоказателю(ТекДанные)</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">// &#160; &#160; Для Каждого ТекСтрока Из Объект.Показатели Цикл</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; ТекДанные.ИспользуютсяКритерииОценки = ТекДанные.Показатель.ИспользуютсяКритерииОценки;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; Если Не ТекДанные.ИспользуютсяКритерииОценки И Не ТекДанные.Показатель.ПометкаУдаления Тогда</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; ТекДанные.Балл = ТекДанные.Показатель.НормативноеЗначение;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; ИначеЕсли&#160; &#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; ТекДанные.ИспользуютсяКритерииОценки И Не ТекДанные.КритерийОценки.ПометкаУдаления Тогда</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160; &#160; &#160; &#160; &#160; ТекДанные.Балл = ТекДанные.КритерийОценки.НормативноеЗначение;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; Иначе ТекДанные.Балл = 0; &#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; КонецЕсли;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; ТекДанные.СуммаБаллов = ТекДанные.Количество * ТекДанные.Балл;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">// &#160; &#160; КонецЦикла; &#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">КонецПроцедуры</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; &#160; </div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

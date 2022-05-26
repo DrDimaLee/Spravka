@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<base target="_blank" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>1.1.1.4. &#x0421;&#x043A;&#x043E;&#x043F;&#x0438;&#x0440;&#x043E;&#x0432;&#x0430;&#x0442;&#x044C; (&#x0412;&#x044B;&#x0433;&#x0440;&#x0443;&#x0437;&#x0438;&#x0442;&#x044C;)</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>1.1.1.4. Скопировать (Выгрузить)</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_45105D3361"><strong>Полностью скопировать таблицу значений</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">НоваяТаблицаТоваров </span><span class="de_45E825280E">=</span><span class="de_B22A2C8F71"> ТаблицаТоваров</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Скопировать</span><span class="de_45E825280E">();</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_45E825280E"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4AF4BF9DD6"> </span><span class="de_45105D3361">   /// Как создать копию таблицы значений по нужным колонкам в 1с 8.3, 8.2</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">    </span><span class="de_C5A91726DE">// получится таблица, состоящая только из двух колонок - Фрукт и Цвет</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">    КопияТаб </span><span class="de_45E825280E">= </span><span class="de_B22A2C8F71">Таб</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">СкопироватьКолонки</span><span class="de_45E825280E">(</span><span class="de_4AF4BF9DD6">&quot;Фрукт, Цвет&quot;</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_45E825280E"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_45E825280E"> </span><span class="de_4AF4BF9DD6"> </span><span class="de_45105D3361">   /// Как создать копию таблицы значений по отбору в 1с 8.3, 8.2</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">    Отбор </span><span class="de_45E825280E">= Новый</span><span class="de_B22A2C8F71"> Структура</span><span class="de_45E825280E">;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">    Отбор</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Вставить</span><span class="de_45E825280E">(</span><span class="de_4AF4BF9DD6">&quot;Фрукт&quot;</span><span class="de_45E825280E">, </span><span class="de_4AF4BF9DD6">&quot;Яблоко&quot;</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">    </span><span class="de_C5A91726DE">// таблица будет содержать только строчку с яблоком</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">    КопияТаб </span><span class="de_45E825280E">= </span><span class="de_B22A2C8F71">Таб</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Скопировать</span><span class="de_45E825280E">(</span><span class="de_B22A2C8F71">Отбор</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">    </span><span class="de_C5A91726DE">// таблица будет содержать только колонки с цветом и весом яблока</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">    КопияТаб </span><span class="de_45E825280E">= </span><span class="de_B22A2C8F71">Таб</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Скопировать</span><span class="de_45E825280E">(</span><span class="de_B22A2C8F71">Отбор</span><span class="de_45E825280E">, </span><span class="de_4AF4BF9DD6">&quot;Цвет, ВесФрукта&quot;</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_45E825280E">  </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">Полное копирование данных для колонок с совпадающими именами</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">      </span><span class="de_C5A91726DE">// Добавить очередное имя совпадающих колонок в массив.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">      </span><span class="de_B22A2C8F71">ОдноименныеКолонки</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Добавить</span><span class="de_45E825280E">(</span><span class="de_B22A2C8F71">Колонка</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Имя</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4AF4BF9DD6">Скопировать таблицу только с нужными колонками:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4AF4BF9DD6">КоличествоЧасовПоДисциплинамИВидамНагрузки.Скопировать(,&quot;Дисциплина, ФормаОбучения, ПериодКонтроля, Нагрузка, ЕдиницаИзмерения, НормаЧасы, КоличествоОбучающихся, КоличествоПар, КоличествоГрупп, КоличествоЧасов&quot;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_45105D3361"><strong>Создать ТЗ копированием части другой ТЗ</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">ТаблицаПолучатель существует, и жалко терять ее колонки и ограничения на типы данных колонок. Но нужно заполнить данные по колонкам, имена которых совпадают с именами исходной таблицы. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">Частичный перенос данных для колонок с совпадающими именами:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_45E825280E"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_45E825280E">Для Каждого </span><span class="de_B22A2C8F71">СтрокаИсходнойТаблицы </span><span class="de_45E825280E">Из </span><span class="de_B22A2C8F71">ИсходнаяТаблица </span><span class="de_45E825280E">Цикл</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">   </span><span class="de_B22A2C8F71">НоваяСтрока </span><span class="de_45E825280E">= </span><span class="de_B22A2C8F71">ТаблицаПолучатель</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Добавить</span><span class="de_45E825280E">();</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">   </span><span class="de_B22A2C8F71">ЗаполнитьЗначенияСвойств</span><span class="de_45E825280E">(</span><span class="de_B22A2C8F71">НоваяСтрока</span><span class="de_45E825280E">, </span><span class="de_B22A2C8F71">СтрокаИсходнойТаблицы</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_45E825280E">КонецЦикла</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">Для каждой строки исходной таблицы добавляется новая строка в таблицу-получатель и выполняется заполнение значений в тех колонках новой таблицы, имена которых совпадают с именами колонок в исходной таблице</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">Если у таблиц не будет колонок с одинаковыми именами, таблица-получатель будет в результате содержать столько же строк с пустыми значениями, сколько строк было в таблице-источнике.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">Если у каких-то одноименных колонок тип значения данных из таблицы-источника не попадет в массив разрешенных типов колонки таблицы-получателя, в таких полях получим пустые значения.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>ТаблицаЗначений (ValueTable)</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C47D959D2B"><strong>Скопировать (Copy)</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Вариант синтаксиса: Скопировать строки</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Синтаксис:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Скопировать(&lt;Строки&gt;, &lt;Колонки&gt;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Параметры:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C47D959D2B">&lt;Строки&gt; (необязательный)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Тип: </span><a href="v8help://SyntaxHelperContext/objects/catalog234/Array.html"><span class="de_9B6035DDD7">Массив</span></a><span class="de_E71183D815">. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Массив строк для копирования. Если не указан, копируются все строки таблицы значений.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C47D959D2B">&lt;Колонки&gt; (необязательный)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Тип: </span><a href="v8help://SyntaxHelperLanguage/def_String"><span class="de_9B6035DDD7">Строка</span></a><span class="de_E71183D815">. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Список колонок для копирования в формате: &quot;Колонка1, Колонка2...&quot;.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Описание варианта метода:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Если указаны строки и колонки, то только они будут скопированы. Если не указаны, то будет создана полная копия таблицы значений.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Вариант синтаксиса: Скопировать по отбору</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Синтаксис:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Скопировать(&lt;ПараметрыОтбора&gt;, &lt;Колонки&gt;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Параметры:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C47D959D2B">&lt;ПараметрыОтбора&gt; (необязательный)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Тип: </span><a href="v8help://SyntaxHelperContext/objects/catalog234/Structure.html"><span class="de_9B6035DDD7">Структура</span></a><span class="de_E71183D815">. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Ключ структуры - идентификатор колонки, а значение структуры - значение отбора.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C47D959D2B">&lt;Колонки&gt; (необязательный)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Тип: </span><a href="v8help://SyntaxHelperLanguage/def_String"><span class="de_9B6035DDD7">Строка</span></a><span class="de_E71183D815">. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Список колонок для копирования в формате: &quot;Колонка1, Колонка2...&quot;.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Описание варианта метода:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Если указан отбор, то только строки из отбора будут скопированы. Если отбор не указан, то будут скопированы все строки таблицы значений. Если указаны колонки, то только эти колонки будут скопированы. Иначе, будут скопированы все колонки таблицы значений.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Возвращаемое значение:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Тип: </span><a href="v8help://SyntaxHelperContext/objects/catalog234/catalog236/ValueTable.html"><span class="de_9B6035DDD7">ТаблицаЗначений</span></a><span class="de_E71183D815">. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Описание:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5">Создает копию исходной таблицы значений.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Доступность: </strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5">Сервер, толстый клиент, внешнее соединение, мобильное приложение (сервер).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Пример:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_576" />
+<tr style="height: 20px;">
+<td class="de_td_576" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 3px; border-left-color: #f0f0f0; border-right-style: none; border-right-width: 3px; border-right-color: #f0f0f0; border-top-style: none; border-top-width: 3px; border-top-color: #f0f0f0; border-bottom-style: none; border-bottom-width: 3px; border-bottom-color: #f0f0f0;  width: 100%; vertical-align: middle; background-color: #f7f7f7;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_065E135154">НовТаблицаЦен </span><span class="de_EA4BCA6BA1">=</span><span class="de_065E135154"> ТаблицаЦен</span><span class="de_EA4BCA6BA1">.</span><span class="de_065E135154">Скопировать</span><span class="de_EA4BCA6BA1">();</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Использование в версии:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5">Доступен, начиная с версии 8.1.</span><hr style="width: 100%; height: 1px; text-align: left; margin-left: 0; margin-right: auto; border:none; background-color:#000000; color: #000000; clear:none;" /></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5">     </span><a href="http://www.1centerprise.com/devlinks?C=%22id=00045O00071M00649%3blan=ru%22" target="_blank"><span class="de_9B6035DDD7">Методическая информация</span></a></div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

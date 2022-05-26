@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<base target="_blank" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>1.1.1.8. &#x0421;&#x043E;&#x0440;&#x0442;&#x0438;&#x0440;&#x043E;&#x0432;&#x0430;&#x0442;&#x044C;</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>1.1.1.8. Сортировать</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">// Как отсортировать таблицу значений по колонке в 1с 8.3, 8.2</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">Таб</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Сортировать</span><span class="de_45E825280E">(</span><span class="de_4AF4BF9DD6">&quot;ВесФрукта Возр&quot;</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">ТаблицаТоваров</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Сортировать</span><span class="de_45E825280E">(</span><span class="de_4AF4BF9DD6">&quot;Цена&quot;</span><span class="de_45E825280E">); </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">// Как отсортировать таблицу значений по нескольким колонкам в 1с 8.3, 8.2</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">Таб</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Сортировать</span><span class="de_45E825280E">(</span><span class="de_4AF4BF9DD6">&quot;ВесФрукта Возр, Вкус Убыв&quot;</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4AF4BF9DD6">ТаблицаКомпетенций.Сортировать(&quot;КодСтрокаДляСортировки, КодЧислоДляСортировки&quot;);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_42CB517B6F"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="1209" height="345" class=" de_780D01ADE8" src="drex_sortirovat_custom.png"/><span class="de_42CB517B6F"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>ТаблицаЗначений (ValueTable)</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C47D959D2B"><strong>Сортировать (Sort)</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Синтаксис:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Сортировать(&lt;Колонки&gt;, &lt;ОбъектСравнения&gt;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Параметры:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C47D959D2B">&lt;Колонки&gt; (обязательный)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Тип: </span><a href="v8help://SyntaxHelperLanguage/def_String"><span class="de_9B6035DDD7">Строка</span></a><span class="de_E71183D815">. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Список имен колонок, разделенных запятыми, по которым производится сортировка таблицы. После каждого имени колонки через пробел может быть указано направление сортировки. Направление определяется: &quot;Убыв&quot; (&quot;Desc&quot;) - упорядочивать по убыванию; &quot;Возр&quot; (&quot;Asc&quot;) - упорядочивать по возрастанию. По умолчанию сортировка производится по возрастанию. Порядок указания имен колонок таблицы определяет порядок сортировки. Это означает, что сначала таблица сортируется по колонке, указанной первой. Затем группы строк с одинаковым значением в этой колонке сортируются по колонке, которая указана второй, и так далее.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C47D959D2B">&lt;ОбъектСравнения&gt; (необязательный)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Тип: </span><a href="v8help://SyntaxHelperContext/objects/catalog63/CompareValues.html"><span class="de_9B6035DDD7">СравнениеЗначений</span></a><span class="de_E71183D815">. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E71183D815">Объект для сравнения значений. Независимо от того, задан объект сравнения или нет, элементы, чьи типы не совпадают, сравниваются по коду типа, а элементы простых типов сравниваются по значению. Дополнительно к этому:</span></div>
+<ul class="de_list"><li class="list-element list-counter-3" style="color:#000000;font-size:12pt;font-family:&quot;Times New Roman&quot;; direction: ltr; counter-reset: list-counter-3;">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:12pt;font-family:&quot;Times New Roman&quot;; display: inline-block; direction: ltr;"></div><span class="de_7ECBECEBE5">если объект сравнения не задан, то элементы остальных типов сравниваются по строковому представлению;</span></div>
+</li><li class="list-element list-counter-3" style="color:#000000;font-size:12pt;font-family:&quot;Times New Roman&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:12pt;font-family:&quot;Times New Roman&quot;; display: inline-block; direction: ltr;"></div><span class="de_7ECBECEBE5">если объект сравнения задан, то:</span></div>
+</li><li class="list-element list-counter-4" style="color:#000000;font-size:12pt;font-family:&quot;Times New Roman&quot;; direction: ltr; counter-reset: list-counter-4;">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:12pt;font-family:&quot;Times New Roman&quot;; display: inline-block; direction: ltr;"></div><span class="de_7ECBECEBE5">объекты сравниваются по идентификатору;</span></div>
+</li><li class="list-element list-counter-4" style="color:#000000;font-size:12pt;font-family:&quot;Times New Roman&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:12pt;font-family:&quot;Times New Roman&quot;; display: inline-block; direction: ltr;"></div><span class="de_7ECBECEBE5">моменты времени сравниваются по дате и идентификатору объекта;</span></div>
+</li><li class="list-element list-counter-4" style="color:#000000;font-size:12pt;font-family:&quot;Times New Roman&quot;; direction: ltr; ">
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="list-marker" style="color:#000000;font-size:12pt;font-family:&quot;Times New Roman&quot;; display: inline-block; direction: ltr;"></div><span class="de_7ECBECEBE5">элементы остальных типов сравниваются по строковому представлению.</span></div>
+</li></ul><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Описание:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5">Сортирует таблицу значений в соответствии с указанными правилами сортировки.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Доступность: </strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5">Сервер, толстый клиент, внешнее соединение, мобильное приложение (сервер).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7ECBECEBE5"><strong>Пример:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_576" />
+<tr style="height: 110px;">
+<td class="de_td_576" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 3px; border-left-color: #f0f0f0; border-right-style: none; border-right-width: 3px; border-right-color: #f0f0f0; border-top-style: none; border-top-width: 3px; border-top-color: #f0f0f0; border-bottom-style: none; border-bottom-width: 3px; border-bottom-color: #f0f0f0;  width: 100%; vertical-align: middle; background-color: #f7f7f7;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_065E135154">ТаблицаЦен</span><span class="de_EA4BCA6BA1">.</span><span class="de_065E135154">Сортировать</span><span class="de_EA4BCA6BA1">(</span><span class="de_D68646C8A7">&quot;Цена Убыв, Товар Возр&quot;</span><span class="de_EA4BCA6BA1">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_F86928F523">// Пример с использованием объекта сравнения</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_065E135154">Альфа </span><span class="de_EA4BCA6BA1">= Новый </span><span class="de_065E135154">СравнениеЗначений</span><span class="de_EA4BCA6BA1">;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_065E135154">ТаблицаЦен</span><span class="de_EA4BCA6BA1">.</span><span class="de_065E135154">Сортировать</span><span class="de_EA4BCA6BA1">(</span><span class="de_D68646C8A7">&quot;Цена Убыв&quot;</span><span class="de_EA4BCA6BA1">,</span><span class="de_065E135154"> Альфа</span><span class="de_EA4BCA6BA1">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

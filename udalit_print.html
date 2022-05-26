@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<base target="_blank" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>1.1.1.9. &#x0423;&#x0434;&#x0430;&#x043B;&#x0438;&#x0442;&#x044C;</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>1.1.1.9. Удалить</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4AF4BF9DD6">Чтобы удалить строку в таблице значений, нужно передать саму строку или индекс в метод «Удалить». Два варианта:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C5A91726DE">//по строке</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">ТаблицаТоваров</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Удалить</span><span class="de_45E825280E">(</span><span class="de_B22A2C8F71">ТаблицаТоваров</span><span class="de_45E825280E">[</span><span class="de_B22A2C8F71">ВсегоСтрок  </span><span class="de_45E825280E">- </span><span class="de_4AF4BF9DD6">1</span><span class="de_45E825280E">]);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">ТаблицаЗначений</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Удалить</span><span class="de_45E825280E">(</span><span class="de_B22A2C8F71">УдаляемаяСтрока</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C5A91726DE">//по индексу</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">ТаблицаТоваров</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Удалить</span><span class="de_45E825280E">(</span><span class="de_B22A2C8F71">ВсегоСтрок  </span><span class="de_45E825280E">- </span><span class="de_4AF4BF9DD6">1</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">ТаблицаЗначений</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Удалить</span><span class="de_45E825280E">(</span><span class="de_56E0F4D4A6">0</span><span class="de_45E825280E">);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">//удалить все строки таблицы значений</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">ТаблицаТоваров</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Очистить</span><span class="de_45E825280E">();</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">//Удалить колонку по индексу</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">ТаблицаЗначений.Колонки.Удалить(0);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">//удалить все колонки&#160; таблицы значений</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_B22A2C8F71">ТаблицаТоваров</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Колонки</span><span class="de_45E825280E">.</span><span class="de_B22A2C8F71">Очистить</span><span class="de_45E825280E">();</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_45E825280E"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6">Необходимо учитывать, что удаление строки (или колонки) «из середины» таблицы значений приведет к уменьшению на единицу индексов строк, стоявших «после» удаленной</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56E0F4D4A6"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">/</span><span class="de_2F96214069">/ 1. Удаление строк согласно условию</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">&#160; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">НулевыеСтроки = ТаблицаПослеПодмен.НайтиСтроки(Новый Структура(&quot;Сумма&quot;,0));</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">Для каждого СтрокаТаблицы Из НулевыеСтроки Цикл</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 50px; text-indent: 0px;"><span class="de_744DE1A2A3">ТаблицаПослеПодмен.Удалить(СтрокаТаблицы)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">КонецЦикла;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">&#160; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">// Нужно оставить строки только соответствующие условию,а остальные удалить то:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">&#160; &#160; &#160; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">ПараметрыОтбора = Новый Структура(&quot;Цена&quot;,15000);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">ТЗНов = ТЗ.Скопировать(ПараметрыОтбора); </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">&#160;// в результате в ТЗнов будут только строки из ТЗ, в которых значение поля Цена = 15000</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">&#160;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">// 2. Удаление определенной строки, например УдаляемаяСтрока = 5;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">ТаблицаЗначений.Удалить(УдаляемаяСтрока); </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">// 3. Удаление первой строки</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">ТаблицаЗначений.Удалить(0); </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">&#160;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">// 4. Удаление определенной колонки, например УдаляемаяКолонка = 3;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">ТаблицаЗначений.Колонки.Удалить(УдаляемаяКолонка); </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">// 5. Удалить первую колонку</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">ТаблицаЗначений.Колонки.Удалить(0); </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_2F96214069">// 6. Удаление строк перебором, проверяя условие</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">СтаршийИндексКолонок = ТаблицаЗначений.Колонки.Количество() - 1; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">Индекс = ТаблицаЗначений.Количество() - 1; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">Пока Индекс &gt; = 0 Цикл </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 50px; text-indent: 0px;"><span class="de_744DE1A2A3">Для Сч = 0 По СтаршийИндексКолонок Цикл </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 100px; text-indent: 0px;"><span class="de_744DE1A2A3">Если ТипЗнч(ТаблицаЗначений[Индекс][Сч]) = Тип(&quot;Число&quot;) Тогда </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 150px; text-indent: 0px;"><span class="de_744DE1A2A3">ТаблицаЗначений.Удалить(Индекс); </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 150px; text-indent: 0px;"><span class="de_744DE1A2A3">Прервать; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 100px; text-indent: 0px;"><span class="de_744DE1A2A3">КонецЕсли; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 50px; text-indent: 0px;"><span class="de_744DE1A2A3">КонецЦикла; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">&#160; &#160; &#160; &#160; &#160; &#160; Индекс = Индекс - 1; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_744DE1A2A3">КонецЦикла;</span></div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

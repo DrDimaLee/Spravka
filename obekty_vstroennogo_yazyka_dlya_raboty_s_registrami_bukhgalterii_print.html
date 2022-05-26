@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<base target="_blank" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>1.2.12.1. &#x041E;&#x0431;&#x044A;&#x0435;&#x043A;&#x0442;&#x044B; &#x0432;&#x0441;&#x0442;&#x0440;&#x043E;&#x0435;&#x043D;&#x043D;&#x043E;&#x0433;&#x043E; &#x044F;&#x0437;&#x044B;&#x043A;&#x0430; &#x0434;&#x043B;&#x044F; &#x0440;&#x0430;&#x0431;&#x043E;&#x0442;&#x044B; &#x0441; &#x0440;&#x0435;&#x0433;&#x0438;&#x0441;&#x0442;&#x0440;&#x0430;&#x043C;&#x0438; &#x0431;&#x0443;&#x0445;&#x0433;&#x0430;&#x043B;&#x0442;&#x0435;&#x0440;&#x0438;&#x0438;</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>1.2.12.1. Объекты встроенного языка для работы с регистрами бухгалтерии</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4AF4BF9DD6">На следующей схеме изображено взаимодействие объектов встроенного языка для работы с регистрами бухгалтерии (рис. 29.21).</span></div>
+<div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="600" height="452" class=" de_780D01ADE8" src="drex_obekty_vstroennogo_yazyka_dlya_raboty_s_registrami_bukhgalterii_custom.png"/></div>
+<div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4AF4BF9DD6"><strong>Рис. 29.21.</strong></span><span class="de_5FB625965B"> Объекты встроенного языка для работы с регистрами бухгалтерии</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4AF4BF9DD6"><strong>ПРИМЕЧАНИЕ</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 26px; text-indent: 0px;"><span class="de_40A1E0D682">Заливкой выделен объект манипулирования данными.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4AF4BF9DD6"><strong>Узнай больше!</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E0D79DE1AC">Про основные виды объектов встроенного языка можно прочитать в главе </span><a href="https://its.1c.ru/db/content/pubdevguide83/src/597.html#h601"><span class="de_83BE3C4E7A">«Объекты встроенного языка для работы с прикладными данными»</span></a><span class="de_E0D79DE1AC">.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E0D79DE1AC">РегистрБухгалтерииЗапись.&lt;имя&gt;</span><span class="de_4AF4BF9DD6">. Используется для доступа к записи регистра бухгалтерии. Объект не создается непосредственно, а предоставляется другими объектами, отвечающими за регистр бухгалтерии. Например, данный объект представляет записи регистра в наборе записей.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E0D79DE1AC">РегистрБухгалтерииСубконто.&lt;имя&gt;</span><span class="de_4AF4BF9DD6">. Коллекция значений субконто записи регистра бухгалтерии. Установка и получение значения конкретного субконто осуществляются через оператор </span><span class="de_E0D79DE1AC">[]</span><span class="de_4AF4BF9DD6">, в качестве параметра которому передается вид субконто, или через имя предопределенного субконто.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E0D79DE1AC">РегистрБухгалтерииКлючЗаписи.&lt;имя&gt;</span><span class="de_4AF4BF9DD6">. Набор значений, однозначно идентифицирующий запись регистра. Объект используется в тех случаях, когда необходимо сослаться на определенную запись. Например, он выступает в качестве значения свойства </span><span class="de_E0D79DE1AC">ТекущаяСтрока</span><span class="de_4AF4BF9DD6"> табличного поля, отображающего список записей регистра.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_4AF4BF9DD6">Свойства и методы взаимодействия перечисленных объектов в большинстве своем аналогичны у объектов, предназначенных для работы с регистрами накопления (см. раздел </span><a href="https://its.1c.ru/db/content/pubdevguide83/src/626.html#h630"><span class="de_83BE3C4E7A">«Объекты встроенного языка для работы с регистрами накопления»</span></a><span class="de_4AF4BF9DD6">).</span></div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

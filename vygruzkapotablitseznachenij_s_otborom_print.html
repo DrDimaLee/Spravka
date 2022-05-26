@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<base target="_blank" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>1.1.1.18. &#x0412;&#x044B;&#x0433;&#x0440;&#x0443;&#x0437;&#x043A;&#x0430;&#x041F;&#x043E;&#x0422;&#x0430;&#x0431;&#x043B;&#x0438;&#x0446;&#x0435;&#x0417;&#x043D;&#x0430;&#x0447;&#x0435;&#x043D;&#x0438;&#x0439; &#x0441; &#x043E;&#x0442;&#x0431;&#x043E;&#x0440;&#x043E;&#x043C;</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>1.1.1.18. ВыгрузкаПоТаблицеЗначений с отбором</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&amp;НаСервереБезКонтекста</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Функция ВыгрузкаПоТаблицеЗначений(ИсточникДанных, Отбор, ВидОтбора, ИмяПоляОтбора)</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; ПостроительЗапроса = Новый ПостроительЗапроса; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; ПостроительЗапроса.ИсточникДанных = Новый ОписаниеИсточникаДанных(ИсточникДанных); </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; НовыйОтбор = ПостроительЗапроса.Отбор.Добавить(ИмяПоляОтбора); </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; НовыйОтбор.ВидСравнения = ВидОтбора;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; НовыйОтбор.Значение = Отбор; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; НовыйОтбор.Использование = Истина; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; Результат = ПостроительЗапроса.Результат; &#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;&#160; Возврат Результат.Выгрузить(); &#160; &#160; </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">КонецФункции</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>
